@@ -42,7 +42,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<Product> listAll() {
         List<Product> products = new ArrayList<>();
-        productRepository.findAll().forEach(products::add); //fun with Java 8
+        productRepository.findAll().forEach(products::add); //with Java 8
         return products;
     }
 
